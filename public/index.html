@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="rest.js"></script>
+		<meta name=viewport content="user-scalable=no,width=device-width" />
+		<link rel=stylesheet href="jquery.mobile-1.4.0/jquery.mobile-1.4.0.css" />
+		<link rel=stylesheet href="custom.css" />
+		<script src="jquery.mobile-1.4.0/jquery.mobile-1.4.0.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    </head>
+
+    <body>
+		<!-- Start of first page -->
+		<div data-role="page" id="foo">
+			<div class="list">
+				<div id="map" style="height: 300px;">&nbsp;</div>
+	        	<ul id="konikyList" data-role="listview" data-inset="true"> </ul>
+				<p>
+				  <a href="#bar" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="a" data-transition="pop"  rel="external">Pridej Konika</a>
+				</p>
+			</div>
+		</div>
+		<!-- Start of second page -->
+		<div data-role="page" id="bar">
+			<div class="list">
+			<div data-role="header">
+				<h1>Pridej Konika</h1>
+			</div><!-- /header -->
+
+			<div data-role="content">
+				<form action="http://127.0.0.1:9393/new_konik" data-ajax="false" id="addForm" class="ui-body ui-body-a ui-corner-all">
+					<label for="basic">Name:</label>
+				    <input type="text" name="name" placeholder="Konikovo jmeno" id="basic" value=""  />
+					<label for="select-choice-0" class="select">Type:</label>
+					<select name="type" id="select-choice-0">
+					   <option value="konik">Konik</option>
+					   <option value="oslik">Oslik</option>
+					   <option value="mulik">Mulik</option>
+					</select>
+					<label for="basic">Autocomplete:</label>
+				    <input type="text" name="autocomplete" placeholder="Zadejte adresu" id="autocomplete" value=""  />
+					<label for="basic">Street address:</label>
+				    <input type="text" name="street_number" id="street_number" disabled="true" value=""  />
+					<label for="basic">Latitude:</label>
+				    <input type="text" name="latitude" id="latitude" disabled="true" value=""  />
+					<label for="basic">Longitude:</label>
+				    <input type="text" name="longitude" id="longitude" disabled="true" value=""  />
+					<input type="submit" value="Pridej Konika" id="add_konik" />
+				</form>			
+				<div id="result"></div>
+				<p><a href="#foo">Back to map</a></p>	
+			</div><!-- /content -->
+
+			<div data-role="footer">
+				<h4>Page Footer</h4>
+			</div><!-- /footer -->
+		</div>
+		</div><!-- /page -->
+		<!-- Start of third page -->
+		<div data-role="page" id="detail">
+			<div class="list">
+				<div id="konik_detail"></div>
+				<div id="detail_name"></div>
+				<div id="detail_type"></div>
+				<div id="detail_latitude"></div>
+				<div id="detail_longitude"></div>
+				<p><a href="#foo">Back to map</a></p>
+			</div>
+		</div>
+    </body>
+</html>

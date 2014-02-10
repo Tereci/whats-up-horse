@@ -1,0 +1,87 @@
+STAJE
+
+FIND
+1) Najit staje pobliz urciteho mista
+2) Najit jednu konkretni staj (e.g. znam nazev)
+3) Najit mnozinu staji splnujici urcita kriteria (typ jezdeni, cena, hodnoceni...) bez omezeni na lokaci, nebo na nekolika lokacich (vybiram e.g. kam na dovolenou)
+
+ADD
+1) Chci dohledat souradnice podle adresy
+2) Znam primo souradnice (a hledani podle adresy se nechyta)
+3) Neznam presnou adresu ani souradnice, ale umim najit lokaci na mape
+
+EIDT
+1) Udaje o staji jsou nepravdive (e.g. zvysila se cena, zanikli etc.)
+2) Staj nove nabizi nejakou sluzbu (e.g. jezdi i western)
+3) Obnoveni zanikle staje
+
+KOMENTAR/HODNOCENI
+1) Mam zkusenost s danou staji a chci se podelit s ostatnimi (f:fulltext vyhledavani i v komentarich?)
+2) Vsimnu si, ze neco v popisu staje je nepravdive, chci to nahlasit (f:staje, ktere byly nahlasene, by se mely sortovat ve vysledcich dolu)
+
+Moznost zabookmarkovat si staj, nebo poslat link
+
+EVENTY
+
+FIND
+To same co pro staje + vyhledavani podle casu (mozna i uplynule eventy?)
+
+ADD
+To same co pro staje + cas - opakujici se vs. jednorazove eventy
+
+Moznost zabookmarkovat si staj, nebo poslat link
+
+? musi/mohou byt eventy nejak prolinkovane se stajemi (e.g. poradatel/lokace)
+
+
+Staj:
+Obecne
+- id
+- nazev
+- lokace (lat, lng, adresa)
+- web
+- telefon
+- email
+- obrazky
+- dalsi linky - tripadvisor, facebook...
+
+Sluzby (jezdeni, ubytovani.. dalsi)
+jezdeni
+- guided trail rides
+- fast trail rides
+- horse lease
+- private lessons
+- group lessons
+- minimum age for riding on the trail:
+- minimum age for private/group lesson:
+- beginner riders
+- intermediate riders
+- advanced riders
+- operates during winter
+
+specializace
+- anglie
+- show jumping
+- racing
+- hunter
+- western
+- western pleasure
+- catlle drive
+- team penning
+
+can host events:
+- horse clinics
+- ...
+
+vybaveni
+- shielded arena
+- round pen
+
+
+styles (western, english)
+
+
+/////////////
+- moznost lokalizace (nacitani textu z parametru)
+- mozonst pouziti na mobilu
+- kolik lidi, co klikne na "pridat staj/event" opravdu neco prida (kolik z nich odradi formular)
